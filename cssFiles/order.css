@@ -1,0 +1,100 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#order-Page {
+    height: 92vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(248, 248, 248, 0.956);
+}
+
+#order-Page>section {
+    background-color: white;
+    height: 100%;
+}
+
+#orderCar {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: 1rem;
+    align-items: start;
+}
+
+#orderCar>img {
+    height: 15rem;
+    width: 25rem;
+    box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.307);
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+#orderCar>h3 {
+    font-size: 3rem;
+}
+
+#orderBTN {
+    width: 90%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    transition: 0.1s;
+}
+#orderBTN:hover {
+    scale: 1;
+    transform: translateY(-2px);
+}
+
+#orderBTN:active {
+    transform: translateY(1px);
+}
+
+#carDetails{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.5rem;
+    padding-right: 1rem;
+}
+
+.orderInfo {
+    background-color: rgb(234, 232, 232);
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px  5px 5px rgba(0, 0, 0, 0.166);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.orderTitle {
+    background-color: rgb(234, 232, 232);
+    color: rgb(9, 9, 9);
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px  5px 5px rgba(0, 0, 0, 0.166);
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    justify-content: center;
+}
+
+
+#orderPrice>h4 {
+    font-family: 'title';
+    font-size: 1.3rem;
+}

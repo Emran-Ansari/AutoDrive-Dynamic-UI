@@ -1,0 +1,84 @@
+#sign-page {
+    height: 92vh;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+}
+
+#form-container {
+    height: 100%;
+    width: 45%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container>div {
+    height: 90%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    padding-left: 1rem;
+    gap: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    box-shadow: 3px 3px 10px 5px rgba(28, 28, 28, 0.112);
+    padding-left: 2rem;
+}
+
+
+
+.form-input {
+    /* background-color: black; */
+    border: 1px solid white;
+    height: 12%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* color: white; */
+    gap: 0.5rem;
+}
+
+#picture-container {
+    height: 100%;
+    width: 25%;
+}
+
+#picture-container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+
+#sign-up-btn {
+    height: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    transition: 0.1s ;
+}
+
+#sign-up-btn:hover {
+    scale: 1;
+    transform: translateY(-2px);
+
+}
+
+#sign-up-btn:active {
+    transform: translateY(1px);
+}

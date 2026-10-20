@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Drive</title>
+    <link rel="stylesheet" href="./cssFiles/style.css">
+    <link rel="stylesheet" href="./cssFiles/inventory.css">
+    <link rel="stylesheet" href="./cssFiles/about.css">
+    <link rel="stylesheet" href="./cssFiles/contact.css">
+    <link rel="stylesheet" href="./cssFiles/login.css">
+    <link rel="stylesheet" href="./cssFiles/signPage.css">
+    <link rel="stylesheet" href="./cssFiles/order.css">
+    <link rel="stylesheet" href="./Sorces/icons/FontAwesome.Pro.7.3.1/Web/css/all.min.css">
+</head>
+
+<body>
+    <header id="navbar-header">
+        <h2>Auto Drive.</h2>
+        <nav>
+            <button id="homeBTN" class="bubble-reveal-btn">Home</button>
+            <button id="inventoryBTN" class="bubble-reveal-btn">Inventory</button>
+            <button id="aboutBTN" class="bubble-reveal-btn">About</button>
+            <button id="contactBTN" class="bubble-reveal-btn">Contact</button>
+        </nav>
+        <div>
+            <button id="sign">Sign Up</button>
+            <button id="login-button">Login</button>
+            <button id="sign-out" style="display: none;">Sign Out</button>
+        </div>
+    </header>
+
+
+
+
+
+    <main id="home-page" style="display: flex;">
+
+        <section id="hero-card">
+
+            <div id="hero-title">
+
+                <h1>Find Your <br>
+                    Perfect Car</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                    Expedita facilis nihil nostrum.
+                </p>
+                <button id="hero-BTN">
+                    Browse Cars <i class="fa-regular fa-arrow-right" style="color: white;"></i>
+                </button>
+
+            </div>
+
+            <div id="hero-img">
+                <div></div>
+            </div>
+
+        </section>
+
+
+
+        <section id="inventory-info">
+            <div class="info-card">
+                <span class="circle">
+                    <i class="fa-sharp fa-thin fa-shield-check fa-2x" class="icons"></i>
+                </span>
+
+                <span>
+                    <h4>Trusted Dealer</h4>
+                    <p>genuine cars</p>
+                </span>
+
+            </div>
+
+            <div class="info-card">
+                <span class="circle">
+                    <i class="fa-thin fa-tag fa-2x" class="icons"></i>
+                </span>
+                <span>
+                    <h4>Best Price</h4>
+                    <p>Competitive rates</p>
+                </span>
+            </div>
+
+            <div class="info-card">
+                <span class="circle">
+                    <i class="fa-light  fa-clock-rotate-left fa-2x" class="icons"></i>
+                </span>
+                <span>
+                    <h4>24/7 Support</h4>
+                    <p>Always Here</p>
+                </span>
+            </div>
+            <div class="info-card">
+                <span class="circle">
+                    <i class="fa-light fa-calendar-minus fa-2x" class="icons"></i>
+                </span>
+                <span>
+                    <h4>Easy Financing</h4>
+                    <p>Flexible options</p>
+                </span>
+            </div>
+
+        </section>
+
+        <section id="catagory-cards">
+
+            <section id="catagory-title">
+                <h2>Popular Categories</h2>
+                <button id="viewBTN">View All</button>
+            </section>
+
+            <section id="Cards">
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="./Sorces/pngimages/Spectre.png" style="width: 100%;" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Sedan</h3>
+                        <p>Luxury & Comfort</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="image"><img id="Lexus" src="./Sorces/pngimages/download (1).png" style="width: 90%;" alt="">
+                    </div>
+                    <div class="card-info">
+                        <h3>SUV</h3>
+                        <p>Power & Adventure</p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="./Sorces/pngimages/GT.png" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Hatchback</h3>
+                        <p>Compact & Dynamic</p>
+                    </div>
+                </div>
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="./Sorces/Images/34.png" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Truck</h3>
+                        <p>Tough & Reliable</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="image">
+                        <img src="./Sorces/pngimages/ferrari.png" style="width: 110%;" alt="">
+                    </div>
+
+                    <div class="card-info">
+                        <h3>Coupe</h3>
+                        <p>Speed & Performance</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+    </main>
+
+
+    <main id="inventory-page" style="display: none;">
+
+        <section id="gallery-title">
+            <h1>Our Cars</h1>
+            <p>Browse our wide selection of quality vehicles</p>
+        </section>
+
+        <section id="inventory-top-filters">
+            <input type="search" id="search-box" placeholder="Search ...">
+
+            <select id="top-brands"></select>
+
+            <select id="top-categories">
+
+            </select>
+
+            <select id="top-prices">
+                <option>All Prices</option>
+                <option>Max Price</option>
+                <option>Min Price</option>
+            </select>
+
+            <button id="search-btn">Search</button>
+        </section>
+
+        <section id="inventory-content">
+            <aside id="side-filters">
+                <section id="brands">
+
+                    <h2>Filters</h2>
+                    <h5>Brands</h5>
+
+                    <div class="brand-filters">
+                        <input type="checkbox" value="All brands" checked>
+                        <label>All</label>
+                    </div>
+
+                    <div class="brand-filters">
+                        <input type="checkbox" value="Toyota">
+                        <label>Toyota</label>
+                    </div>
+
+                    <div class="brand-filters">
+                        <input type="checkbox" value="Hyundai">
+                        <label>Hyundai</label>
+                    </div>
+
+                    <div class="brand-filters">
+                        <input type="checkbox" value="BMW">
+                        <label>BMW</label>
+                    </div>
+
+                    <div class="brand-filters">
+                        <input type="checkbox" value="Mercedes-Benz">
+                        <label>Mercedes</label>
+                    </div>
+                    <div class="brand-filters">
+                        <input type="checkbox" value="Ford">
+                        <label>Ford</label>
+                    </div>
+
+                </section>
+
+                <section id="type">
+                    <h5>Categories</h5>
+
+                    <div class="category-filters">
+                        <input type="checkbox" value="All categories" checked>
+                        <label>All</label>
+                    </div>
+
+                    <div class="category-filters">
+                        <input type="checkbox" value="Sedan">
+                        <label>Sedan</label>
+                    </div>
+
+                    <div class="category-filters">
+                        <input type="checkbox" value="SUV">
+                        <label>SUV</label>
+                    </div>
+
+                    <div class="category-filters">
+                        <input type="checkbox" value="Coupe">
+                        <label>Coupe</label>
+                    </div>
+
+                </section>
+
+                <div id="reset-container">
+                    <button id="reset" class="bubble-reveal-btn">Reset Filters</button>
+                </div>
+
+            </aside>
+
+            <div id="gallary-container">
+
+                <article id="show-cars">
+
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+
+    <!-- Login page -->
+    <main id="login-page" style="display: none;">
+
+        <section id="img-container">
+            <img src="./Sorces/Images/login.jfif" id="login-img" alt="">
+        </section>
+
+        <section id="info-container">
+
+            <div>
+                <h2>Login to Your Account</h2>
+                <p>Welcome back! Please login to continue.</p>
+
+                <div class="inputs">
+                    <label>Email Address</label>
+                    <input type="email" id="login-email" placeholder="Enter Your Email">
+                </div>
+
+                <div class="inputs">
+                    <div id="pass">
+                        <label>Password</label>
+                        <a href="javascript:void(0);">Forgot password</a>
+                    </div>
+
+                    <input type="password" id="login-password" placeholder="Enter Your Password">
+                </div>
+
+                <div class="inputs" id="check">
+                    <input type="checkbox" id="remember-checkBox">
+                    <label>Remember Me</label>
+                </div>
+
+                <button id="login-btn">Login</button>
+                <fieldset>
+                    <legend>Or continue with</legend>
+
+                    <div class="continue" id="google">
+                        <i class="fa-brands fa-google fa-xl"></i>
+                    </div>
+
+                    <div class="continue" id="facebook">
+                        <i class="fa-brands fa-facebook-f fa-xl"></i>
+                    </div>
+
+                    <div class="continue" id="apple">
+                        <i class="fa-brands fa-apple fa-xl"></i>
+                    </div>
+
+                </fieldset>
+
+                <div id="sign-link">
+                    Don't have an account? <a href="javascript:void(0);">Sign up</a>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- sign in page -->
+
+
+    <main id="sign-page" style="display: none;">
+
+        <section id="form-container">
+
+            <div>
+                <h2>Create Account</h2>
+                <p>Sign up to get started</p>
+
+                <div class="form-input">
+                    <label>Full Name</label>
+                    <input type="text" required placeholder="Enter your full name" id="username">
+                </div>
+
+                <div class="form-input">
+                    <label>Email Address</label>
+                    <input type="email" required placeholder="Enter your Email Address" id="user-email">
+                </div>
+
+                <div class="form-input">
+                    <label>Phone Number</label>
+                    <input type="tel" required placeholder="Enter your phone Number" id="user-phone">
+                </div>
+
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" required placeholder="Enter your password" id="user-password">
+                </div>
+
+
+                <button id="sign-up-btn">Sign In</button>
+
+
+                <div id="login-link">
+                    Already have an account? <a href="javascript:void(0);">Login</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="picture-container">
+            <img src="./Sorces/Images/142.jfif" alt="">
+        </section>
+
+    </main>
+
+
+    <main id="order-Page" style="display: none;">
+
+      
+    </main>
+
+
+    <!-- About Page -->
+
+
+    <main id="about" style="display: none;">
+
+        <header id="about-title">
+            <h2>About us</h2>
+            <p>Home/About us</p>
+        </header>
+
+        <article>
+
+            <section id="Pitcure">
+                <img src="./Sorces/Images/202.jfif" alt="">
+            </section>
+
+            <section id="description">
+
+                <div id="text2">
+                    <h1>Driven by passion, <br> Built on trust</h1>
+
+                    <p>"At AutoDrive, we are redefined by a passion for elite performance <br>
+                        and an unwavering commitment to transparency. <br>
+                        For years, we have connected drivers with the world's most exceptional vehicles. <br>
+                        ensuring every purchase is backed by certified quality, expert inspection, <br>
+                        and premium 24/7 client support."
+                    </p>
+                </div>
+
+            </section>
+
+        </article>
+
+        <section id="about-cards">
+
+            <div class="about-card">
+                <span>
+                    <i class="fa-light fa-users fa-2x"></i>
+                </span>
+                <div>
+                    <h2>1000+</h2>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <span>
+                    <i class="fa-regular fa-car fa-2x"></i>
+                </span>
+                <div>
+                    <h2>100+</h2>
+                    <p>Cars Available</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+                <span>
+                    <i class="fa-regular fa-shield-check fa-2x"></i>
+                </span>
+                <div>
+                    <h2>20+</h2>
+                    <p>Brands</p>
+                </div>
+            </div>
+
+            <div class="about-card">
+
+                <span>
+                    <i class="fa-sharp fa-light fa-stopwatch fa-2x"></i> </span>
+                <div>
+                    <h2>12</h2>
+                    <p>Years Experience</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+    <main id="contact-page" style="display: none;">
+        <header id="contact-header">
+
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you. Send us a message or visit our showroom.</p>
+
+        </header>
+        <article id="contact-sections">
+
+            <section id="contact-form">
+
+                <div class="contactForm-title">
+                    <h3>Send Us a Message</h3>
+                </div>
+
+                <div class="user-info">
+                    <label>Full Name</label>
+                    <input type="text" placeholder="Enter your full name" disabled>
+                </div>
+                <div class="user-info">
+                    <label>Phone Number</label>
+                    <input type="tel" placeholder="Enter your phone number" disabled>
+                </div>
+
+                <div class="user-info">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="Enter your email address" disabled>
+                </div>
+
+                <div id="message-box">
+                    <label>Message</label>
+                    <textarea placeholder="Write your message ..." disabled></textarea>
+                </div>
+                <button id="send-btn">Send Message</button>
+            </section>
+
+
+            <section id="contact-info">
+
+                <div>
+                    <h3>Contact Information</h3>
+                </div>
+
+                <div class="contact-container">
+                    <span class="circle">
+                        <i class="fa-utility-fill fa-semibold fa-location-dot fa-xl"></i> </span>
+                    <div>
+                        <h5>Address</h5>
+                        <p>Herat,Afghanistan</p>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <span class="circle">
+                        <i class="fa-solid fa-phone-volume fa-xl"></i>
+                    </span>
+                    <div>
+                        <h5>Phone</h5>
+                        <p>++93798XXXXXXX</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-container">
+                    <span class="circle">
+                        <i class="fa-solid fa-envelope fa-xl"></i>
+                    </span>
+                    <div>
+                        <h5>Email</h5>
+                        <p>ansaryemran54@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-container">
+                    <span class="circle">
+                        <i class="fa-solid fa-globe-pointer fa-xl"></i>
+                    </span>
+                    <div>
+                        <h5>Website</h5>
+                        <p>www.autodrive.com</p>
+                    </div>
+                </div>
+
+                <div id="social-icons">
+                    <h3>Follow Us</h3>
+                    <div id="social">
+
+                        <div id="instagram" class="continue">
+                            <i class="fa-brands fa-square-instagram fa-2x"></i>
+                        </div>
+
+                        <div id="facebook" class="continue">
+                            <i class="fa-brands fa-square-facebook fa-2x"></i>
+                        </div>
+
+                        <div class="continue">
+                            <i class="fa-brands fa-youtube-shorts fa-xl"></i>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </section>
+
+        </article>
+    </main>
+
+</body>
+<script src="cars.js"></script>
+<script src="script.js"></script>
+<script src="signUp.js"></script>
+<script src="login.js"></script>
+<script src="inventory.js"></script>
+
+</html>
